@@ -7,6 +7,12 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      poziom_oleju:
+        description: 'Podaj stan oleju (np. OK, Niski)'
+        required: true
+        default: 'OK'
   pull_request:
     branches: [ "main" ]
 
@@ -34,3 +40,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Raport diagnostyczny
+        run: echo "Uruchomiono test manualny. Stan oleju: $${{ github.event.inputs.poziom_oleju }}"
