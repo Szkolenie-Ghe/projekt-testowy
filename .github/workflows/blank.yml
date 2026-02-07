@@ -40,4 +40,4 @@ jobs:
           echo test, and deploy your project.
 
       - name: Raport diagnostyczny
-        run: echo "Uruchomiono test manualny. Stan oleju: $${{ github.event.inputs.poziom_oleju }}"
+        run: echo "Uruchomiono test manualny. Stan oleju: ${{ github.event.inputs.poziom_oleju }}"
