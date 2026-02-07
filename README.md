@@ -3,4 +3,4 @@
 Kolejna
 "A tu znowu
 bbb
-Zalecany olej: 15W40
+Zalecany olej: 5W30
